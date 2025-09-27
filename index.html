@@ -1,0 +1,134 @@
+<!-- Nikhil Bhiduri CSE core Section B roll no. 2501010128 Web Development assignment 01-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nikhil Bhiduri's Portfolio</title>
+</head>
+<body>
+  <header>
+  <h1>Nikhil Bhiduri's Portfolio</h1>
+
+  <!-- Navbar SEction -->
+  <nav>
+    <ul class="navbar">
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#About me">About me</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#My Contacts">My Contacts</a></li>
+        <li><a href="#Contact me">Contact me</a></li>
+    </ul>
+  </nav> 
+  </header>
+  <hr>
+
+  <main>
+  <!-- Welcom message -->
+   <section id="welcome">
+  <h3>Welcome</h3>
+  <p>Hello, I am an aspiring web developer and this is my Portfolio</p>
+  </section>
+
+ <!-- Education details -->
+  <section id="Education">
+  <h2>Education</h2>
+  <ul>
+  <li><p>10<sup>th</sup> - Kendriya Vidyalaya No.2 Delhi Cantt <b>(2020-2021)</b></p></li>
+  <li><p>12<sup>th</sup> - Kendriya Vidyalaya No.2 Delhi cantt <b>(2022-2023)</b></p></li>
+  <li><p>B.Tech CSE - K.R. Mangalam University <b>(2025-2029)</b></p></li>
+  </ul>
+  </section>
+
+  <!-- Personal info -->
+ <section id="About me">
+  <h2>About Me</h2>
+  <img src="hero.jpg" alt="Hero" width="250">
+  <p>Hello! I'm Nikhil Bhiduri, I'm currently pursuing a B.Tech degree with a strong focus on learning coding, web development and software engineering.
+  <br> I enjoy building innovative solutions and exploring the latest technologies in the field. My journey is all about mastering programming skills and shaping a future in tech.
+ </section>
+
+    <!-- project info -->
+  <section id="Projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Portfolio Website: </strong> Created a portfolio website for myself using only html to show my skills and abilities to others</li>
+    <li><strong>Basic Calculator</strong> Created a basic calculator using python that performs all basic operations on any two user inputed numbers </li>
+  </ul>
+  </section>
+
+<!-- Skill table -->
+ <section id="Skills">
+  <h2>Technical Skills</h2>
+ <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ </style>
+   <table style="width: 25%;">
+   <tr>
+    <th>Language Skills</th>
+    <th>Level of proficiency</th>
+   </tr>
+   <tr>
+    <td>HTML</td>
+    <td>Average level</td>
+   </tr>
+   <tr>
+    <td>CSS</td>
+    <td>Begginner level</td>
+   <tr>
+    <td>JavaScript</td>
+    <td>None</td>
+   </tr>
+   </tr>
+   <tr>
+    <td>Python</td>
+    <td>Average level</td>
+   </tr>
+   </table>
+  </section>
+  </main>
+
+  
+
+  
+ <footer>
+    <!-- Contact detail -->
+   <br>
+   <br>
+   <hr>
+  <section id="My Contacts">
+   <h2>My Contacts</h2>
+   <p><a href="mailto:nikhilbhiduri2005@gmail.com">Email<img src="gmail.png" alt="Gmail"></a></p>
+   <p>Phone: +91 9289842075</p>
+   <p><a href="https://www.instagram.com/nik.__.200/">Instagram<img src="instagram.png" alt="Instagram"></a></p>
+   <p><a href="https://www.linkedin.com/in/nikhil-bhiduri-80718937a/">LinkedIN<img src="linkedin.png" alt="LinkedIN"></a></p>
+   <p><a href="https://github.com/Nik-hil005">GitHub<img src="github.png" alt="GitHub"></a></p>
+  </section>
+
+  <!-- contact form -->
+  <section id="Contact me">
+    <h2>Contact me</h2>
+    <form>
+      <fieldset style="width: 40%;">
+      <legend>Contact me</legend>
+      <form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Full name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="abcd@xyz.com" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <input type="message" id="message" name="message" placeholder="Message" required><br><br>
+
+    <input type="submit" value="Submit">
+    </fieldset>
+   </form>
+    </form>
+   
+  </section>
+ </footer>
+</body>
+</html>
