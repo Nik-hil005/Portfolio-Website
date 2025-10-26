@@ -3,24 +3,29 @@
 <html>
 <head>
   <title>Nikhil Bhiduri's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-  <h1>Nikhil Bhiduri's Portfolio</h1>
+  
+  <h1 style="text-align:center;">Nikhil Bhiduri's Portfolio</h1>
 
-  <!-- Navbar SEction -->
-  <nav>
-    <ul class="navbar">
-        <li><a href="#Education">Education</a></li>
+  <!-- Navbar Section -->
+  <nav class="navbar" 
+   style="height: 40px;
+   text-align: center;
+   position: sticky;
+   top: 0;">
+   <ul class="nav-list" style="list-style: none; display: flex;">
+      <li><a href="#Education">Education</a></li>
         <li><a href="#About me">About me</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#My Contacts">My Contacts</a></li>
         <li><a href="#Contact me">Contact me</a></li>
-    </ul>
+   </ul>
   </nav> 
   </header>
-  <hr>
 
   <main>
   <!-- Welcom message -->
@@ -97,14 +102,15 @@
     <!-- Contact detail -->
    <br>
    <br>
-   <hr>
   <section id="My Contacts">
    <h2>My Contacts</h2>
-   <p><a href="mailto:nikhilbhiduri2005@gmail.com">Email<img src="gmail.png" alt="Gmail"></a></p>
    <p>Phone: +91 9289842075</p>
-   <p><a href="https://www.instagram.com/nik.__.200/">Instagram<img src="instagram.png" alt="Instagram"></a></p>
-   <p><a href="https://www.linkedin.com/in/nikhil-bhiduri-80718937a/">LinkedIN<img src="linkedin.png" alt="LinkedIN"></a></p>
-   <p><a href="https://github.com/Nik-hil005">GitHub<img src="github.png" alt="GitHub"></a></p>
+   <p style="text-align: center;">
+    <a href="mailto:nikhilbhiduri2005@gmail.com" target="_blank" style="margin-right: 50px;"><img src="gmail.png" alt="Gmail"></a>
+    <a href="https://www.instagram.com/nik.__.200/" target="_blank" style="margin-right: 50px;"><img src="instagram.png" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/in/nikhil-bhiduri-80718937a/" target="_blank" style="margin-right: 50px;"><img src="linkedin.png" alt="LinkedIN"></a>
+    <a href="https://github.com/Nik-hil005" target="_blank" style="margin-right: 50px;"><img src="github.png" alt="GitHub"></a>
+  </p>
   </section>
 
   <!-- contact form -->
@@ -121,9 +127,9 @@
     <input type="email" id="email" name="email" placeholder="abcd@xyz.com" required><br><br>
 
     <label for="message">Message:</label><br>
-    <input type="message" id="message" name="message" placeholder="Message" required><br><br>
+    <textarea name="message" id="message" placeholder="Enter your message here" ></textarea><br><br>
 
-    <input type="submit" value="Submit">
+    <button type="submit">Submit</button>
     </fieldset>
    </form>
     </form>
