@@ -1,140 +1,99 @@
-<!-- Nikhil Bhiduri CSE core Section B roll no. 2501010128 Web Development assignment 01-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nikhil Bhiduri's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  
-  <h1 style="text-align:center;">Nikhil Bhiduri's Portfolio</h1>
 
-  <!-- Navbar Section -->
-  <nav class="navbar" 
-   style="height: 40px;
-   text-align: center;
-   position: sticky;
-   top: 0;">
-   <ul class="nav-list" style="list-style: none; display: flex;">
-      <li><a href="#Education">Education</a></li>
-        <li><a href="#About me">About me</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#My Contacts">My Contacts</a></li>
-        <li><a href="#Contact me">Contact me</a></li>
-   </ul>
-  </nav> 
-  </header>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <main>
-  <!-- Welcom message -->
-   <section id="welcome">
-  <h3>Welcome</h3>
-  <p>Hello, I am an aspiring web developer and this is my Portfolio</p>
-  </section>
+    <!-- Hero Section -->
+    
+    <section class="hero">
+        
+        <div class="hero-text">
+            <h1>Hi, I am</h1>
+            <h2 class="highlight">Full Stack Developer</h2>
+            <p>Building modern web applications with MERN stack.</p>
+        </div>
+        <div class="hero-img">
+            <img src="hero.jpg" alt="profile">
+        </div>
+    </section>
 
- <!-- Education details -->
-  <section id="Education">
-  <h2>Education</h2>
-  <ul>
-  <li><p>10<sup>th</sup> - Kendriya Vidyalaya No.2 Delhi Cantt <b>(2020-2021)</b></p></li>
-  <li><p>12<sup>th</sup> - Kendriya Vidyalaya No.2 Delhi cantt <b>(2022-2023)</b></p></li>
-  <li><p>B.Tech CSE - K.R. Mangalam University <b>(2025-2029)</b></p></li>
-  </ul>
-  </section>
+    <!-- About Section -->
+    <section id="About">
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I am Nikhil Bhiduri an aspiring web developer. I am currently working hard on improving my skills
+            and expanding my knowledge.<br>
+            I enjoy learning new technologies, experimenting with ideas and enjoy the art of making websites.
+            My goal is to grow into a skilled developer who can create impactful digital solutions and contribute 
+            to real world problems
+        </p>
+    </section>
+    </section>
 
-  <!-- Personal info -->
- <section id="About me">
-  <h2>About Me</h2>
-  <img src="hero.jpg" alt="Hero" width="250">
-  <p>Hello! I'm Nikhil Bhiduri, I'm currently pursuing a B.Tech degree with a strong focus on learning coding, web development and software engineering.
-  <br> I enjoy building innovative solutions and exploring the latest technologies in the field. My journey is all about mastering programming skills and shaping a future in tech.
- </section>
+    <!-- Skills Section -->
+    <section id="Skills"></section>
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML <span>Beginner</span></div>
+            <div class="skill-card">CSS <span>Beginner</span></div>
+            <div class="skill-card">JavaScript <span>Learning</span></div>
+        </div>
+    </section>
 
-    <!-- project info -->
-  <section id="Projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Portfolio Website: </strong> Created a portfolio website for myself using only html to show my skills and abilities to others</li>
-    <li><strong>Basic Calculator</strong> Created a basic calculator using python that performs all basic operations on any two user inputed numbers </li>
-  </ul>
-  </section>
+    <!-- Projects Section -->
+    <section id="Projects"></section>
+    <section class="projects">
+        <h2>My Projects</h2>
 
-<!-- Skill table -->
- <section id="Skills">
-  <h2>Technical Skills</h2>
- <style>
-    table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
- </style>
-   <table style="width: 25%;">
-   <tr>
-    <th>Language Skills</th>
-    <th>Level of proficiency</th>
-   </tr>
-   <tr>
-    <td>HTML</td>
-    <td>Average level</td>
-   </tr>
-   <tr>
-    <td>CSS</td>
-    <td>Begginner level</td>
-   <tr>
-    <td>JavaScript</td>
-    <td>None</td>
-   </tr>
-   </tr>
-   <tr>
-    <td>Python</td>
-    <td>Average level</td>
-   </tr>
-   </table>
-  </section>
-  </main>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>WebDev Potfolio</p>
+        </div>
 
-  
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Python Calorie Tracker Project</p>
+        </div>
+    </section>
 
-  
- <footer>
-    <!-- Contact detail -->
-   <br>
-   <br>
-  <section id="My Contacts">
-   <h2>My Contacts</h2>
-   <p>Phone: +91 9289842075</p>
-   <p style="text-align: center;">
-    <a href="mailto:nikhilbhiduri2005@gmail.com" target="_blank" style="margin-right: 50px;"><img src="gmail.png" alt="Gmail"></a>
-    <a href="https://www.instagram.com/nik.__.200/" target="_blank" style="margin-right: 50px;"><img src="instagram.png" alt="Instagram"></a>
-    <a href="https://www.linkedin.com/in/nikhil-bhiduri-80718937a/" target="_blank" style="margin-right: 50px;"><img src="linkedin.png" alt="LinkedIN"></a>
-    <a href="https://github.com/Nik-hil005" target="_blank" style="margin-right: 50px;"><img src="github.png" alt="GitHub"></a>
-  </p>
-  </section>
+    <!-- Contact Section -->
+    <section id="Contact"></section> 
+    <section class="contact">
+        <h2>Contact Me</h2>
 
-  <!-- contact form -->
-  <section id="Contact me">
-    <h2>Contact me</h2>
-    <form>
-      <fieldset style="width: 40%;">
-      <legend>Contact me</legend>
-      <form action="/submit" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Full name" required><br><br>
+        <form class="contact-form">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <textarea placeholder="Write your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="abcd@xyz.com" required><br><br>
 
-    <label for="message">Message:</label><br>
-    <textarea name="message" id="message" placeholder="Enter your message here" ></textarea><br><br>
+    <!-- Footer -->
+    <footer>
+        © 2025 Nikhil Bhiduri. All rights reserved.
+    </footer>
 
-    <button type="submit">Submit</button>
-    </fieldset>
-   </form>
-    </form>
-   
-  </section>
- </footer>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
 </body>
 </html>

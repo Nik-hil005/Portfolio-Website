@@ -1,105 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-:root {
-  --primary-color: #1e3a8a;   
-  --accent-color: #f59e0b;    
-  --light-bg: #f9fafb;      
-  --text-color: #1f2937;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--light-bg);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    background: #f2f2f2;
+    color: #333;
 }
 
-/* navbar styling */
-nav {
-  background-color: var(--primary-color);
-  position: sticky;
-  z-index: 1000;
+/* Navbar */
+.navbar {
+    background: #003f8c;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-top: 7px;
-  padding: 15px x;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
 }
 
-nav a:hover {
-  background-color: gainsboro;
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-list li{
-    margin-right: 20px;
+.nav-links a:hover{
+    color: #d4a017;
 }
 
-.nav-list li:last-child {
-    margin-right: 0;
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: #fff;
 }
 
-/* section styling */
-section {
-  padding: 40px 20px;
-  margin: 20px auto;
-  max-width: 1000px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+.hero-text h1 {
+    font-size: 42px;
 }
 
-/* table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.highlight {
+    color: #ff5733;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
+.hero-img img {
+    width: 200px;
+    border-radius: 50%;
 }
 
-table tr:nth-child(even) {
-  background-color: #f3f4f6;
+/* About */
+.about {
+    padding: 50px;
+    background: #f9f9f9;
 }
 
-table th {
-  background-color: var(--primary-color);
-  color: white;
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-button {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Skills */
+.skills {
+    padding: 50px 10%;
 }
 
-button:hover {
-  background-color: cyan;
+.skills h2{
+    margin-bottom: 20px;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.skills-container {
+    display: flex;
+    gap: 20px;
 }
 
-.text-center {
-  text-align: center;
+.skill-card {
+    background: #0056c1;
+    color: #fff;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.mt-2 { margin-top: 20px; }
-.mb-2 { margin-bottom: 20px; }
-.p-2 { padding: 20px; }
+.skill-card:hover {
+  border-color: #5638c5;
+  box-shadow: 0 0 15px #5638c5, 0 0 30px #5638c5;
+}
+
+.skill-card span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Projects */
+.projects {
+    padding: 50px 10%;
+}
+
+.project-card {
+    background: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 25px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0056c1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #003f8c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #0056c1;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
