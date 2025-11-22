@@ -3,12 +3,10 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 structure of my portfolio
 1. Welcome message
-2. Education
-3. About me
+2. About me
+3. Language skills
 4. Projects
-5. Language skills
-6. My contacts
-7. Contact me form
+5. Contact me
 
 I have added information about my education as an unordered list, language skills in a table format, another unordered list for my projects and added a form for the reader to contact me in case.
 I have used images as links to my various social media profiles including github and linkedin.
