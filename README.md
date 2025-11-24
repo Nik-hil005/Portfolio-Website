@@ -1,4 +1,4 @@
-# Web-dev-Assignment-01
+# Web-dev-Portfolio
 Welcome to my personal portfolio website! This project showcases my skills, projects, and interests as a budding software engineer. Built using pure HTML, it's designed to be lightweight, responsive, and easy to navigate.
 
 structure of my portfolio
